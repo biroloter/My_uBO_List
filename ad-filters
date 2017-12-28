@@ -1,0 +1,72 @@
+! Title: ad-filters
+! Author: biroloter
+! Date: 28-12-2017
+! Expires: 7 days (update frequency)
+! Last modified: 28 Dec 2017 21:05 UTC
+! Homepage: https://github.com/biroloter/My_uBO_List
+! Requirement: uBlock Origin
+! Get uBlock Origin from https://github.com/gorhill/uBlock/releases/
+
+! --------------------------------------------------------------------------- !
+! Annoying Ads, Third Party Tacking Domains
+.bid^$important
+/generate_204$important
+||www.qiytksjydjmt.bid^$important
+||www.gxuibhjxssnrol.bid^$important
+||husetdmrejiyjy.bid^$important
+||popads.net^$important
+||exoclick.com^$important
+||misslk.com^$important
+||wwwpromoter.com^$important
+||dlyads.com^$important
+||directrev.com^$important
+||networkad.net^$important
+||exosrv.com^$important
+||doubleclick.net^$important
+||st.chatango.com^$important
+||www.schborg.com^$important
+||privateadtracking.com^
+||www.morbitempus.com^$important
+||track.greta.io^$important
+
+! --------------------------------------------------------------------------- !
+
+! Facebook Messaging Privacy (is typing, seen message)
+||facebook.com/*/change_read_status.php$important
+||facebook.com/*/mark_seen.php$important
+||facebook.com/*/typ.php$important
+||messenger.com/*/change_read_status.php$important
+||messenger.com/*/mark_seen.php$important
+||messenger.com/*/typ.php$important
+
+! eksisozluk.com
+eksisozluk.com###site-footer
+eksisozluk.com###videos
+eksisozluk.com###svg-dots
+eksisozluk.com##li footer > .feedback
+eksisozluk.com##li[data-author=reklam]
+eksisozluk.com##.related-titles
+seyler.eksisozluk.com###mashup-detail-sidebar
+www.59saniye.com###videoshare
+www.59saniye.com###socialdata
+
+! mackolik.com, sahadan.com
+www.mackolik.com###live-master > div
+www.mackolik.com##.top-banner
+www.mackolik.com##a[href^="https://www.tuttur.com/futbol-iddaa"]
+www.sahadan.com##.tuttur-logo
+www.sahadan.com###dvMatchVisualization
+||karnaval.com/players/mackolik-radyo$subdocument
+||www.sahadan.com/VideoPlayer/*$important
+||www.mackolik.com/VideoPlayer/*,important
+||im.cdn.md/img5/radyo-anime.gif$image
+
+! turknova.net
+www.turknova.net###pluginradyo
+www.turknova.net###wrap > center
+||www.turknova.net/js/radyo/*$domain=www.turknova.net,important
+
+! dropbox.com privacy
+||www.dropbox.com/log/*$domain=www.dropbox.com,important
+||www.dropbox.com/prompt/log_impression$domain=www.dropbox.com,important
+||www.dropbox.com/csp_log$domain=www.dropbox.com,important
