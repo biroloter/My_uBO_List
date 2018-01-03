@@ -70,3 +70,21 @@ www.turknova.net###wrap > center
 ||www.dropbox.com/log/*$domain=www.dropbox.com,important
 ||www.dropbox.com/prompt/log_impression$domain=www.dropbox.com,important
 ||www.dropbox.com/csp_log$domain=www.dropbox.com,important
+
+! Google, Youtube Annoyances, Ads & Tracking
+google.*##._Ubu
+||google.*/pagead/$important
+||google.*/gen_204?$important
+||adservice.google.*^$important
+||cse.google.com^$important
+||youtube.com/api/stats/$important
+||youtube.com/ptracking$important
+||www.google.*/pagead$domain=youtube.com
+||youtube.com/*/log_event?$important
+||youtube.com/*/log_interaction?$important
+||youtube.com/csi_204$important
+||www.youtube.com/error_204$important
+||youtube.com/get_midroll_info?$important
+||youtube.com/pagead/$important
+||googlevideo.com/videogoodput?
+||play.google.com/log?
