@@ -92,3 +92,17 @@ google.*##._Ubu
 ! Facebook
 ! Profil Resmi İle Giriş
 www.facebook.com##._ihf._4bl9
+
+||facebook.com/ajax/bz$important
+||facebook.com/security/hsts-pixel.gif$important
+||facebook.com/common/referer_frame.php$inline-script
+||pixel.facebook.com^$important
+||facebook.com/ajax/haste-response/?modules=*linkshimlogcontroller$important
+||facebook.com/ads/growth$important
+||facebook.com/xti.php$important
+||fbcdn.net/safe_image.php$important
+||facebook.com/ajax/haste-response/?modules=pubcontentfeedchainingcontroller$important
+||facebook.com/video/autoplay$important
+||facebook.com/ego/feed$important
+||facebook.com/ajax/browse/null_state.php$important
+||facebook.com/ajax/presence/$important
