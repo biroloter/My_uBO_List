@@ -87,7 +87,10 @@ google.*##._Ubu
 ||youtube.com/get_midroll_info?$important
 ||youtube.com/pagead/$important
 ||googlevideo.com/videogoodput?
-||play.google.com/log?
+||play.google.com/log?$important
+||youtube.com/pagead/$important
+||google.*/ads$important
+||csi.gstatic.com^$important
 
 ! Facebook
 ! Profil Resmi İle Giriş
