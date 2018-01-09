@@ -1,15 +1,16 @@
 ! Title: ad-filters
 ! Author: biroloter
-! Date: 08-01-2018
+! Date: 09-01-2018 (DD-MM-YYYY)
 ! Expires: 7 days (update frequency)
-! Last modified: 08 Junary 2018 22:36 UTC
+! Last modified: 09 Junary 2018 21:26 UTC
 ! Homepage: https://github.com/biroloter/uBO
 ! Requirement: uBlock Origin
 ! Get uBlock Origin from https://github.com/gorhill/uBlock/releases/
-
-! --------------------------------------------------------------------------- !
+! ---------------------------------------------------------------------------
 ! Annoying Ads, Third Party Tacking Domains
 .bid^$important
+/adserve/$document
+/click?adv=$document
 /generate_204$important
 ||www.qiytksjydjmt.bid^$important
 ||www.gxuibhjxssnrol.bid^$important
@@ -23,13 +24,26 @@
 ||networkad.net^$important
 ||exosrv.com^$important
 ||doubleclick.net^$important
-||st.chatango.com^$important
 ||www.schborg.com^$important
-||privateadtracking.com^
+||privateadtracking.com^$important
 ||www.morbitempus.com^$important
 ||track.greta.io^$important
+||shalleda.com^$important
+||taboola.com^$important
+||addthis.com^$important
+||scorecardresearch.com^$important
+||r.rockabox.co^$important
+||taboola.com^$important
+||outbrain.com^$important
+||afriflatry.co^$important
+||st.chatango.com^$important
+||chatango.com^$important
 
-! --------------------------------------------------------------------------- !
+! Adblock Detector
+@@||tuganix.com$generichide
+@@||premium-place.com$generichide
+@@||ripple.is$generichide
+@@||reevown.com/assets/js/bvb_advertisement.js
 
 ! Facebook Messaging Privacy (is typing, seen message)
 ||facebook.com/*/change_read_status.php$important
@@ -40,6 +54,7 @@
 ||messenger.com/*/typ.php$important
 
 ! eksisozluk.com
+eksisozluk.com###overlay
 eksisozluk.com###site-footer
 eksisozluk.com###videos
 eksisozluk.com###svg-dots
@@ -76,7 +91,7 @@ google.*##._Ubu
 ||google.*/pagead/$important
 ||google.*/gen_204?$important
 ||adservice.google.*^$important
-||cse.google.com^$important
+||cse.google.*^$important
 ||youtube.com/api/stats/$important
 ||youtube.com/ptracking$important
 ||www.google.*/pagead$domain=youtube.com
@@ -91,11 +106,41 @@ google.*##._Ubu
 ||youtube.com/pagead/$important
 ||google.*/ads$important
 ||csi.gstatic.com^$important
+||gstatic.com/kpui/social/$important
+||www.youtube.com/annotations_invideo$xmlhttprequest,domain=www.youtube.com
 
-! Facebook
-! Profil Resmi İle Giriş
+! memrise.com Annoyances
+$media,domain=www.memrise.com,important
+www.memrise.com###promotion-modal
+www.memrise.com###listening_skills-upsell-modal
+www.memrise.com###difficult_words-upsell-modal
+www.memrise.com###end-session-promo-popup
+www.memrise.com###fireworks-canvas
+www.memrise.com##.js-close-fireworks.fireworks-close-btn
+www.memrise.com###end-session-rank-promo-popup
+! Ekran Karartısı
+www.memrise.com##.in.modal-backdrop
+! Takip Edebileceklerin
+www.memrise.com##section:nth-of-type(2)
+
+! Facebook Login with Profile Picture
 www.facebook.com##._ihf._4bl9
+! önerilen sayfalar
+www.facebook.com###u_ps_0_0_a
+www.facebook.com###u_ps_0_0_d
+! Tanıyor Olabileceğin Kişiler (People you may know)
+www.facebook.com###u_jsonp_6_h
+www.facebook.com##._4nef.userContentWrapper._5pcr
+! Beğenebileceğin Sayfa Haberleri
+www.facebook.com###substream_1
+www.facebook.com###u_jsonp_7_1
+! Alttaki Dil ve yardım menüsü
+www.facebook.com##._2zam._5v6d._5rzs
 
+! Facebook Privacy & Annoyances
+www.facebook.com##.home_right_column
+www.facebook.com###u_0_w
+www.facebook.com###pagelet_ego_pane
 ||facebook.com/ajax/bz$important
 ||facebook.com/security/hsts-pixel.gif$important
 ||facebook.com/common/referer_frame.php$inline-script
