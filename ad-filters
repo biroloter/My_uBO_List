@@ -1,12 +1,3 @@
-! Title: ad-filters
-! Author: biroloter
-! Date: 09-01-2018 (DD-MM-YYYY)
-! Expires: 3 days (update frequency)
-! Last modified: 09 Junary 2018 21:26 UTC
-! Homepage: https://github.com/biroloter/uBO
-! Requirement: uBlock Origin
-! Get uBlock Origin from https://github.com/gorhill/uBlock/releases/
-! ---------------------------------------------------------------------------
 ! Annoying Ads, Third Party Tacking Domains
 .bid^$important
 /adserve/$document
