@@ -30,6 +30,35 @@
 ||st.chatango.com^$important
 ||chatango.com^$important
 
+! Annoying Ads
+||ubapacola.xyz/core/apoplexy.php
+||crosswise.live/assets/everywhere.php
+||funimg.net/frl.js$script
+||imagescomplete.xyz/assimilate/circulation.php
+||imagescomplete.xyz/assimilate/*$script
+||hpyue.com^
+||tripedrated.xyz^$popup
+||salaure.pro^$popup
+||serving.pixsense.net^$subdocument
+||yys.imagespicy.site^$xmlhttprequest
+||www.imgfile.net/vip/serve.html$subdocument
+||www.imgfile.net/shrinker/*$script
+||www.xxximagetpb.org/rearenlolzr.php$script
+||www.xxximagetpb.org/fdrhappylolz.js$script
+||orangepics.xyz/ssk_ex/ba_locakend.php$script
+||orangepics.xyz/ssk_ex/tend_lofron.js$script
+||unporn.site/infa/clairvoyant.js$script
+||unporn.site/knead/estimation.php$script
+||unporn.site/knead/miscarriage.js$script
+||emulevos.xyz/duches/*$script
+||putaimage.info/bolenath.php$script
+||putaimage.info/bolenath.js$script
+||hebukecob.xyz/nicib/nikobem.php
+||hebukecob.xyz/nicib/*
+||hdturk.de/scripts/jquery.lazyload.mini.js
+||imageant.info/holaa.js
+||imageant.info/bolla.php
+
 ! Adblock Detector
 @@||tuganix.com$generichide
 @@||premium-place.com$generichide
