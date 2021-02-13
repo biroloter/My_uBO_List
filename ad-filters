@@ -86,6 +86,12 @@ seyler.eksisozluk.com###mashup-detail-sidebar
 www.59saniye.com###videoshare
 www.59saniye.com###socialdata
 
+! http://zamunda.net
+zamunda.net##.leftadpos.iframe
+zamunda.net##.rightadpos.iframe
+zamunda.net##.clear > .iframe > .clickads
+zamunda.net##.unique-centerpos > .clickads
+
 ! mackolik.com, sahadan.com
 www.mackolik.com###live-master > div
 www.mackolik.com##.top-banner
